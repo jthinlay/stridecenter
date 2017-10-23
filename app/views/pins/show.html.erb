@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<%= render 'home/header'%>
+<div class="panel panel-default">
+    <div class="panel panel-body">
+      <strong>Description:</strong>
+      <%= @pin.description %>
+    </div>
+    <div class="panel panel-footer">
+    <%= link_to 'Edit', edit_pin_path(@pin) %> |
+    <%= link_to 'Back', pins_path %>
+    </div>
+</div>

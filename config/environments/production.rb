@@ -78,4 +78,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   config.action_mailer.default_url_options = { host: 'https://rubypractice-jthinlay.c9users.io' }
+  
+  config.serve_static_files = true
 end
