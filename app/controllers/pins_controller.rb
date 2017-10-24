@@ -1,5 +1,7 @@
 class PinsController < ApplicationController
   before_action :set_pin, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only:[:edit, :update, :destroy]
 
   # GET /pins
   # GET /pins.json
@@ -14,7 +16,7 @@ class PinsController < ApplicationController
 
   # GET /pins/new
   def new
-    @pin = Pin.new
+    @pin = current_user.pins.build
   end
 
   # GET /pins/1/edit
@@ -24,7 +26,8 @@ class PinsController < ApplicationController
   # POST /pins
   # POST /pins.json
   def create
-    @pin = Pin.new(pin_params)
+    @pin = current_user.pins.build(pin_params)
+    
 
     respond_to do |format|
       if @pin.save
@@ -60,6 +63,12 @@ class PinsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+    def correct_user
+      @pin= current_user.pins.find_by(id:params[:id])
+        redirect_to pins_path, notice: "Not authorized to edit this pin" if @pin.nil?
+    end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
