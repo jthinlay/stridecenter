@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.3'
 gem 'coffee-script-source', '~> 1.12', '>= 1.12.2'
+gem 'paperclip', '~> 5.1'
 
 group :development, :test do
   gem 'sqlite3'
