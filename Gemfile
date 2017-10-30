@@ -12,6 +12,9 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'devise', '~> 4.3'
 gem 'coffee-script-source', '~> 1.12', '>= 1.12.2'
 gem 'paperclip', '~> 5.1'
+gem 'jquery-turbolinks', '~> 2.1'
+gem 'masonry-rails', '~> 0.2.4'
+
 
 group :development, :test do
   gem 'sqlite3'
@@ -21,4 +24,3 @@ group :production do
   gem 'pg', '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
-
