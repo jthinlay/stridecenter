@@ -3,7 +3,7 @@
     <div class="navbar-nav">
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><%= link_to 'Tsarong', root_path, class:"navbar-brand"%></li>
+        <li class="nav-item"><%= link_to 'Tsarong', pins_path, class:"navbar-brand"%></li>
         <li><%= link_to 'Home', root_path %> </li>
         <li><%= link_to 'About App', home_about_path %></li>
         <% if user_signed_in? %>
@@ -15,6 +15,7 @@
         <% else %>    
           <li><%= link_to 'Login', new_user_session_path %></li>
           <li><%= link_to 'Join', new_user_registration_path%></li>
+          
         <% end %>
       </ul>
     </div>
