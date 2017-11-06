@@ -7,12 +7,17 @@ $jumbotron-bg: rgb(107, 203, 217);
 body{
   background: #e6ffff;
 }
+.panel-default{
+ background-color: #007399;
+ color: #FFFFFF;
+}
+
 .center{
     text-align: center;
     margin-top: 10px;
 }
 .panel-default > .panel-heading {
-  background-color: #3399ff;
+  background-color: #007399;
   color: #FFFFFF;
 }
 .image{
@@ -25,4 +30,11 @@ body{
   box-shadow: 10px 10px 5px #888888;
   
   height: auto;
+}
+.heading{
+  background-color: #004d66;
+}
+.panel-body{
+   background-color: #004d66;
+   color: #FFFFFF;
 }
