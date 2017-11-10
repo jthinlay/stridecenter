@@ -1,17 +1,10 @@
 $jumbotron-bg: rgb(107, 203, 217);
-
-
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
 body{
   background: #e6ffff;
 }
-.panel-default{
- background-color: #007399;
- color: #FFFFFF;
-}
-
 .center{
     text-align: center;
     margin-top: 10px;
@@ -21,7 +14,7 @@ body{
   color: #FFFFFF;
 }
 .image{
-  border-radius: 20px;
+  border-radius: 100px;
   box-shadow: 10px 10px 5px #888888;
 }
 .container{
