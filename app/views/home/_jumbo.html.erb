@@ -1,6 +1,16 @@
 <div class="jumbotron center">
-<h1>Welcome to my App</h1>
-<p>This is Ruby on Rails playground!</p>
-<%= link_to 'Login', new_user_session_path, class:'btn btn-info' %>
-<%= link_to 'Join', new_user_registration_path, class:'btn btn-danger'%>
+<div class="panel panel-default">
+    <div class="panel panel-heading">
+        <h1>Welcome to my App</h1>
+    </div>
+    <div class="panel panel-body">
+       <p>This is Ruby on Rails playground!</p>
+        <%= image_tag("Indivisable.jpg", width:'250px') %>
+        <%= image_tag("A Place of Inspiration.jpg", width:'250px') %>
+    </div>
+    <div class="panel panel-footer">
+        <%= link_to 'Login', new_user_session_path, class:'btn btn-info' %>
+        <%= link_to 'Join', new_user_registration_path, class:'btn btn-danger'%>
+    </div>
+</div>
 </div>
